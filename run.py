@@ -14,6 +14,7 @@ files_path = ("supplier-data/descriptions/")
 files = os.listdir(files_path)
 images_path = ("supplier-data/images/")
 images = os.listdir(images_path)
+url = "http://104.197.44.26/fruits/"
 
 for file in files:
     supplier_data = {}
@@ -30,4 +31,6 @@ for file in files:
         supplier_data['weight'] = weight_int
         supplier_data['description'] = lines[2].decode("utf-8").rstrip('\n')
         supplier_data['image_name'] = imagename
-    print(supplier_data)
+    r = requests.post(url, json=supplier_data)
+    print(r.request.url)
+    print(r.status_code)
