@@ -26,8 +26,8 @@ subject = "Upload Completed - Online Fruit Store"
 body = "All fruits are uploaded to our website successfully. A detailed list is attached to this email."
 attachment_path = "./processed.pdf"
 
-emails.generate_email("automation@example.com", "username@example.com", subject, body, attachment_path)
-emails.send_email()
+message = emails.generate_email("automation@example.com", "username@example.com", subject, body, attachment_path)
+emails.send_email(message)
 
 if __name__ == "__main__":
     reports.generate_report
