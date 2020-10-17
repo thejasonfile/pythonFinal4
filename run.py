@@ -14,7 +14,7 @@ files_path = ("supplier-data/descriptions/")
 files = os.listdir(files_path)
 images_path = ("supplier-data/images/")
 images = os.listdir(images_path)
-url = "http://104.197.44.26/fruits/"
+url = "http://104.154.100.255/fruits/"
 
 for file in files:
     supplier_data = {}

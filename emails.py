@@ -4,6 +4,7 @@ from email.message import EmailMessage
 message = EmailMessage()
 import mimetypes
 import os
+import smtplib
 
 def generate_email(sender, recipient, subject, body, attachment_path):
     message['From'] = sender

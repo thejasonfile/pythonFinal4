@@ -6,7 +6,7 @@ import requests
 images_path = ("supplier-data/images/")
 images = os.listdir(images_path)
 
-url = "http://104.197.44.26/upload/"
+url = "http://104.154.100.255/upload/"
 
 # for image in images:
 #     if image.endswith('.jpeg'):
